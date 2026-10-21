@@ -1,0 +1,53 @@
+<section id="rag" data-transition="fade" style="background:#EAF0FB;color:#1B2340;font-family:'Nunito', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:800;color:#9A4512;letter-spacing:3px;text-transform:uppercase">Як працює RAG</p>
+<h2 style="font-family:'Rubik', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Спершу знайти, потім відповісти</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:26px;font-weight:800;color:#9A4512;letter-spacing:2px;text-transform:uppercase">Один раз заздалегідь · step3_upload.py</p>
+<div style="display:flex;align-items:center;gap:24px">
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#FFFDF8;border:2px solid #C9D4EA;border-radius:20px;padding:28px">
+<x-icon name="Book" style="width:48px;height:48px;color:#3B5BA9"></x-icon>
+<p style="font-size:30px;font-weight:700">Твої файли</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#3B5BA9"></x-shape>
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#FFFDF8;border:2px solid #C9D4EA;border-radius:20px;padding:28px">
+<x-icon name="Tool" style="width:48px;height:48px;color:#3B5BA9"></x-icon>
+<p style="font-size:30px;font-weight:700">Розрізати на шматки</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#3B5BA9"></x-shape>
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#FFFDF8;border:2px solid #C9D4EA;border-radius:20px;padding:28px">
+<x-icon name="Database" style="width:48px;height:48px;color:#3B5BA9"></x-icon>
+<p style="font-size:30px;font-weight:700">Сховище</p>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:26px;font-weight:800;color:#9A4512;letter-spacing:2px;text-transform:uppercase">На кожне питання · step4_rag_chat.py</p>
+<div style="display:flex;align-items:center;gap:24px">
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#FFFDF8;border:2px solid #C9D4EA;border-radius:20px;padding:28px">
+<x-icon name="Chat" style="width:48px;height:48px;color:#B8561B"></x-icon>
+<p style="font-size:30px;font-weight:700">Питання</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#B8561B"></x-shape>
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#FFFDF8;border:2px solid #C9D4EA;border-radius:20px;padding:28px">
+<x-icon name="Search" style="width:48px;height:48px;color:#B8561B"></x-icon>
+<p style="font-size:30px;font-weight:700">Пошук у сховищі</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#B8561B"></x-shape>
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#FFFDF8;border:2px solid #C9D4EA;border-radius:20px;padding:28px">
+<x-icon name="Lightbulb" style="width:48px;height:48px;color:#B8561B"></x-icon>
+<p style="font-size:30px;font-weight:700">Модель читає шматки</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#B8561B"></x-shape>
+<div style="flex:1;display:flex;align-items:center;gap:20px;background:#1B2340;border-radius:20px;padding:28px">
+<x-icon name="CheckCircle" style="width:48px;height:48px;color:#F2A65A"></x-icon>
+<p style="font-size:30px;font-weight:700;color:#F7F5EF">Відповідь + джерела</p>
+</div>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1600px;font-size:24px;color:#4A5266">Пошук іде за змістом, а не за точними словами: «взяти книжку додому» знайде «термін користування»</p>
+<aside>Аналогія з бібліотекарем: він не пам’ятає всі книжки напам’ять, але знає, де шукати. Спершу знаходить 2–3 потрібні сторінки, потім відповідає за ними. Верхній рядок ми робимо один раз, коли завантажуємо файли. Нижній — щоразу, коли учень ставить питання. Модель читає лише знайдені шматки, а не всі файли, тому це швидко й дешево навіть для тисяч сторінок.</aside>
+</section>

@@ -1,0 +1,34 @@
+<section id="step3" data-transition="fade" style="background:#F7F5EF;color:#1B2340;font-family:'Nunito', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:800;color:#B8561B;letter-spacing:3px;text-transform:uppercase">Крок 3 · 35 хв</p>
+<h2 style="font-family:'Rubik', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Увесь RAG — один інструмент</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:start">
+<div style="width:1060px;display:flex;flex-direction:column;gap:24px">
+<div style="background:#1B2340;border-radius:24px;padding:36px 44px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#9AA4BF;line-height:1.5"># step3_upload.py: один раз</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;color:#F7F5EF;line-height:1.5">store = client.file_search_stores.create(...)<br>client.file_search_stores.upload_to_file_search_store(<br>&#160;&#160;&#160;&#160;file=..., file_search_store_name=store.name)</p>
+</div>
+<div style="background:#1B2340;border-radius:24px;padding:36px 44px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#9AA4BF;line-height:1.5"># step4_rag_chat.py: підключаємо до чату</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;color:#F7F5EF;line-height:1.5"><span style="color:#F2C46D">tools</span>=[types.Tool(file_search=types.FileSearch(<br>&#160;&#160;&#160;&#160;file_search_store_names=[store_name]))]</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Rubik', Arial, sans-serif;font-size:36px;font-weight:600;color:#B8561B">3.1</p>
+<p style="font-size:28px;line-height:1.35">python step3_upload.py<br><span style="color:#5A6378">займає 1–2 хв</span></p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Rubik', Arial, sans-serif;font-size:36px;font-weight:600;color:#B8561B">3.2</p>
+<p style="font-size:28px;line-height:1.35">python step4_rag_chat.py</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Rubik', Arial, sans-serif;font-size:36px;font-weight:600;color:#B8561B">3.3</p>
+<p style="font-size:28px;line-height:1.35">Додай свій файл у materials і завантаж знову</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#5A6378">Робимо свого ШІ-помічника · Робочий аркуш, крок 3</p>
+<aside>Покажіть, що різниця між звичайним чатом і агентом з RAG — фактично один параметр tools. Решту роботи (розрізання, пошук, вибір шматків) виконує сервіс File Search від Google. Поки йде завантаження (1–2 хв), запитайте, які файли учні хочуть дати своєму агенту. Назви файлів можуть бути кирилицею: скрипт це враховує.</aside>
+</section>

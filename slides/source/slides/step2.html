@@ -1,0 +1,20 @@
+<section id="step2" data-transition="fade" style="background:#F7F5EF;color:#1B2340;font-family:'Nunito', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:800;color:#B8561B;letter-spacing:3px;text-transform:uppercase">Крок 2 · step2_context.py · 10 хв</p>
+<h2 style="font-family:'Rubik', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Файл у промпті: працює, але не росте</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:start">
+<div style="width:820px;background:#1B2340;border-radius:24px;padding:40px 48px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;color:#F7F5EF;line-height:1.5">knowledge = FILE.read_text()<br><br>SYSTEM_PROMPT = f"""<br>Відповідай лише за текстом.<br>--- ТЕКСТ ---<br><span style="color:#F2C46D">{knowledge}</span><br>--- КІНЕЦЬ ---"""</p>
+</div>
+<table style="flex:1;font-size:30px;color:#1B2340">
+<tr><th style="width:50%;text-align:left">Добре</th><th style="width:50%;text-align:left">Погано</th></tr>
+<tr><td>Кілька рядків коду</td><td>Файл надсилається з кожним питанням</td></tr>
+<tr><td>Бот знає правильну відповідь</td><td>1000 сторінок не влізуть</td></tr>
+<tr><td>Легко зрозуміти</td><td>У довгому тексті модель губиться</td></tr>
+</table>
+</div>
+<p style="font-size:32px;color:#4A5266;line-height:1.4;width:1600px">Подивись на рядок «прочитано токенів» після кожної відповіді: це ціна одного питання.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#5A6378">Робимо свого ШІ-помічника · Робочий аркуш, крок 2</p>
+<aside>Учні запускають step2_context.py і знову питають про бібліотеку: тепер відповідь правильна. Потім питають про гурток робототехніки — його у файлі немає, і бот має чесно сказати, що не знає. Обговоріть таблицю: що буде, якщо файлів сотня? Токени — це те, за що платять. Тут весь файл їде з кожним питанням.</aside>
+</section>

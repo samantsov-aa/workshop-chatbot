@@ -1,0 +1,27 @@
+<section id="step1" data-transition="fade" style="background:#F7F5EF;color:#1B2340;font-family:'Nunito', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:800;color:#B8561B;letter-spacing:3px;text-transform:uppercase">Крок 1 · step1_chat.py</p>
+<h2 style="font-family:'Rubik', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Увесь чат-бот — 15 рядків</h2>
+</div>
+<div style="display:flex;gap:48px;align-items:start">
+<div style="width:1040px;background:#1B2340;border-radius:24px;padding:40px 48px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;color:#F7F5EF;line-height:1.45"><span style="color:#F2C46D">SYSTEM_PROMPT</span> = """Ти дружній помічник для школярів."""<br><span style="color:#F2C46D">TEMPERATURE</span> = 0.7<br><br>chat = client.chats.create(<br>&#160;&#160;&#160;&#160;model=MODEL,<br>&#160;&#160;&#160;&#160;config=types.GenerateContentConfig(<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;system_instruction=SYSTEM_PROMPT,<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;temperature=TEMPERATURE))<br><br>while True:<br>&#160;&#160;&#160;&#160;question = input("Ти: ")<br>&#160;&#160;&#160;&#160;response = chat.send_message(question)<br>&#160;&#160;&#160;&#160;print("Бот:", response.text)</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Rubik', Arial, sans-serif;font-size:44px;font-weight:600;color:#B8561B">1</p>
+<p style="font-size:30px;line-height:1.35"><b>Характер.</b> Інструкція і регулятор фантазії</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Rubik', Arial, sans-serif;font-size:44px;font-weight:600;color:#B8561B">2</p>
+<p style="font-size:30px;line-height:1.35"><b>Розмова.</b> chat пам’ятає все, що ти писав</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Rubik', Arial, sans-serif;font-size:44px;font-weight:600;color:#B8561B">3</p>
+<p style="font-size:30px;line-height:1.35"><b>Цикл.</b> Питання → відповідь → знову</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#5A6378">Робимо свого ШІ-помічника · Робочий аркуш, завдання 1.1</p>
+<aside>Пройдіться кодом зверху вниз. Підкресліть: тут немає жодної магії — ми просто надсилаємо текст у сервіс Google і друкуємо відповідь. Хай учні запустять файл і виконають завдання 1.1, особливо питання про пам’ять і про шкільну бібліотеку: бот, найімовірніше, вигадає відповідь.</aside>
+</section>

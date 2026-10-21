@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+store_name.txt
+.build_tmp/

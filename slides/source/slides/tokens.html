@@ -1,0 +1,50 @@
+<section id="tokens" data-transition="fade" style="background:#F7F5EF;color:#1B2340;font-family:'Nunito', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:800;color:#B8561B;letter-spacing:3px;text-transform:uppercase">Що таке токен</p>
+<h2 style="font-family:'Rubik', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Модель читає текст шматочками</h2>
+</div>
+<div style="display:flex;gap:56px;align-items:start">
+<div style="width:900px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;color:#4A5266">«робототехніка» → <b>6 токенів</b></p>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#F2A65A;padding:12px 20px;border-radius:12px">ро</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#C9D4EA;padding:12px 20px;border-radius:12px">бо</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#F2A65A;padding:12px 20px;border-radius:12px">то</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#C9D4EA;padding:12px 20px;border-radius:12px">тех</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#F2A65A;padding:12px 20px;border-radius:12px">ні</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#C9D4EA;padding:12px 20px;border-radius:12px">ка</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;color:#4A5266">«robotics» → <b>3 токени</b></p>
+<div style="display:flex;gap:8px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#F2A65A;padding:12px 20px;border-radius:12px">rob</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#C9D4EA;padding:12px 20px;border-radius:12px">ot</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:40px;background:#F2A65A;padding:12px 20px;border-radius:12px">ics</p>
+</div>
+</div>
+<table style="font-size:28px;color:#1B2340">
+<tr><th style="width:70%;text-align:left">Речення</th><th style="width:30%;text-align:right">Токенів</th></tr>
+<tr><td>Кіт сидить на вікні</td><td style="text-align:right">10</td></tr>
+<tr><td>The cat sits on the window</td><td style="text-align:right">7</td></tr>
+</table>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;border-radius:24px;padding:32px">
+<h3 style="font-family:'Rubik', Arial, sans-serif;font-size:34px;font-weight:600">Токен — це шматок слова</h3>
+<p style="font-size:26px;color:#4A5266;line-height:1.35">Часте слово — один токен, рідкісне ріжеться на кілька</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;border-radius:24px;padding:32px">
+<h3 style="font-family:'Rubik', Arial, sans-serif;font-size:34px;font-weight:600">Вгадує теж токенами</h3>
+<p style="font-size:26px;color:#4A5266;line-height:1.35">Відповідь з’являється токен за токеном</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;border-radius:24px;padding:32px">
+<h3 style="font-family:'Rubik', Arial, sans-serif;font-size:34px;font-weight:600">Токени — це гроші</h3>
+<p style="font-size:26px;color:#4A5266;line-height:1.35">За них платять, ними міряють ліміти</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1600px;font-size:24px;color:#5A6378">Кількість токенів справжня (модель Gemini), а поділ на шматки показано приблизно</p>
+<aside>Модель не бачить літер чи цілих слів. Спершу текст ріжуть на токени — шматки, які часто трапляються в текстах. Англійських текстів модель бачила більше, тому англійські слова ріжуться на менше шматків: те саме речення українською займає 10 токенів, англійською — 7. Числа справжні, їх порахувала модель Gemini. Як саме ріжеться слово, на слайді показано приблизно. Чому це важливо: модель вгадує наступний токен (попередній слайд), за токени платять, і в кроці 2 ми побачимо, скільки токенів «з’їдає» кожне питання.</aside>
+</section>

@@ -1,0 +1,21 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-22T12:00:00Z"},
+  "lists": "css",
+  "title": "Робимо свого ШІ-помічника",
+  "cover": "cover",
+  "order": ["cover", "plan", "agent", "predict", "tokens", "halluc", "step0", "step1", "experiment", "problem", "step2", "rag", "step3", "sources", "prompt", "game", "defense", "ethics", "demo", "next"],
+  "sections": {
+    "s1": {"description": "Вступ: що таке агент і як «думає» мовна модель", "start": "cover"},
+    "s2": {"description": "Блок 1: перша розмова з моделлю, інструкція і temperature", "start": "step0"},
+    "s3": {"description": "Блок 2: даємо агенту знання — від промпта до RAG", "start": "problem"},
+    "s4": {"description": "Блок 3: характер агента і захист від prompt injection", "start": "prompt"},
+    "s5": {"description": "Блок 4: демо і що робити далі", "start": "demo"}
+  },
+  "faces": {
+    "rubik": {"family": "Rubik", "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"},
+    "nunito": {"family": "Nunito", "href": "https://fonts.googleapis.com/css2?family=Nunito:wght@400..800&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..700&display=swap"}
+  },
+  "designSystems": []
+}
